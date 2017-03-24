@@ -52,31 +52,46 @@
 body {
     background: #ECECEC;
     font-family: 'Proxima Nova';
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+button:focus {
+    outline: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 4rem;
+    width: 2rem;
+    height: auto;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: auto;
-    padding: 2rem 4rem 0;
+    padding: 3rem 4rem 0 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    z-index: 1000;
-}
-
-nav .logo {
-    width: 2rem;
-    height: auto;
-}
-
-nav .logo img {
-    width: 100%;
-    height: auto;
+    z-index: 1;
 }
 
 nav .links {
@@ -116,13 +131,15 @@ nav .links a:nth-last-of-type() {
 .content {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .content .home-ristek-logo {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,9 +171,9 @@ nav .links a:nth-last-of-type() {
     height: 17.65rem;
     transform: rotate(45deg);
     background: #FFFFFF;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(77,77,77,1);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(77,77,77,1);
-    box-shadow: 0px 0px 15px 0px rgba(77,77,77,1);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.75);
 }
 
 .content .home-ristek-logo img {
@@ -197,6 +214,7 @@ nav .links a:nth-last-of-type() {
     top: 0;
     right: 0;
     transform: translateY(-50%) scaleX(-1);
+    z-index: -1;
 }
 
 .content .ornament-squares-upper img {
@@ -208,6 +226,7 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 100%;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 .content .ornament-squares-middle img {
@@ -220,6 +239,7 @@ nav .links a:nth-last-of-type() {
     top: 60%;
     left: 15%;
     transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .content .lamp-upper img {
@@ -232,6 +252,7 @@ nav .links a:nth-last-of-type() {
     top: 40%;
     right: 7.5%;
     transform: translateY(-50%);
+    z-index: -1;
 }
 
 .content .paradox-upper img {
@@ -243,6 +264,7 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .content .ornament-cloth-upper img {
@@ -255,9 +277,1000 @@ nav .links a:nth-last-of-type() {
     top: 100%;
     right: 0;
     transform: translateY(-75%) scale(-1, -1);
+    z-index: 1;
 }
 
 .content .ornament-cloth-lower img {
     width: 70rem;
     height: auto;
+}
+
+.content .vision {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.content .vision .background {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(-25%);
+    z-index: -1;
+}
+
+.content .vision .text {
+    text-align: center;
+}
+
+.content .vision .text img {
+    width: 2.5rem;
+    height: auto;
+}
+
+.content .vision .text h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #5d5d5d;
+    margin-top: 1.5rem;
+}
+
+.content .vision .text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #5d5d5d;
+    margin-top: 2rem;
+}
+
+.content .vision .text h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #5d5d5d;
+    margin-top: 1rem;
+}
+
+.content .mission {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.content .mission .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 50vw solid #F1F1F1;
+    border-right: 50vw solid transparent;
+    border-bottom: 50vh solid #F1F1F1;
+    border-top: 50vh solid transparent;
+}
+
+.content .mission .text-bg {
+    position: absolute;
+    z-index: -1;
+    top: 42.5%;
+    left: -2.5%;
+    transform: translateY(-50%);
+    font-size: 25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5d5d5d;
+    opacity: 0.05;
+}
+
+.content .mission .text {
+    max-width: 1200px;
+}
+
+.content .mission .text h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #25AECD;
+    margin-top: 1.5rem;
+}
+
+.content .mission .text h2 {
+    text-align: justify;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    color: #5d5d5d;
+    margin-top: 2rem;
+}
+
+.content .mission .text h2 strong {
+    font-weight: 700;
+}
+
+.content .ornament-notebook-middle {
+    position: absolute;
+    top: 212.5%;
+    left: 12.5%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.content .ornament-notebook-middle img {
+    width: 28rem;
+    height: auto;
+}
+
+.content .ornament-vr-middle {
+    position: absolute;
+    top: 282.5%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.content .ornament-vr-middle img {
+    width: 24rem;
+    height: auto;
+}
+
+.content .activities {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden visible;
+    background: #F1F1F1;
+    overflow: hidden;    
+}
+
+.content .activities-text-bg {
+    position: absolute;
+    z-index: 0;
+    top: 280vh;
+    left: -2.5%;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: 25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5d5d5d;
+    opacity: 0.05;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.content .activities .text {
+    text-align: center;
+    max-width: 1200px;
+    margin-top: -2.5vh;
+}
+
+.content .activities .text h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #25AECD;
+    margin-top: 1.5rem;
+}
+
+.content .activities .text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #5d5d5d;
+    margin-top: 2rem;
+}
+
+.content .activities .slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content .activities .slider-content.first,
+.content .activities .slider-content.last,
+.content .activities .slider-content {
+    position: relative;
+    width: 20vw;
+    height: auto;
+    text-align: center;
+}
+
+.content .activities .slider-content.first {
+    margin-left: -15vw;
+}
+
+.content .activities .slider-content.last {
+    margin-right: -15vw;
+}
+
+.content .activities .slider-content.first img,
+.content .activities .slider-content.last img,
+.content .activities .slider-content img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content .activities .slider-content.first h1,
+.content .activities .slider-content.last h1,
+.content .activities .slider-content h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 1.5rem 0 0.75rem;
+    color: #DC4631;
+}
+
+.content .activities .slider-content.first p,
+.content .activities .slider-content.last p,
+.content .activities .slider-content p {
+    font-size: 1.2rem;
+    line-height: 1.25;
+    margin: 0;
+    color: #5d5d5d;
+}
+
+.content .activities .slider-content.last img,
+.content .activities .slider-content.first img {
+    opacity: 0.2;
+}
+
+.content .activities .slider-content.first h1,
+.content .activities .slider-content.last h1,
+.content .activities .slider-content.first p,
+.content .activities .slider-content.last p {
+    opacity: 0;
+}
+
+.content .activities .slider button.next,
+.content .activities .slider button.prev {
+    width: 0;
+    height: 0;
+    border-bottom: 2rem solid transparent;
+    border-top: 2rem solid transparent;
+    position: absolute;
+    top: 7.5rem;
+    z-index: 100;
+    transform: translateY(-50%);
+    opacity: 0.2;
+}
+
+.content .activities .slider button.next:hover,
+.content .activities .slider button.prev:hover {
+    opacity: 1;
+}
+
+.content .activities .slider button.next {
+    right: 1.25rem;
+    border-left: 2rem solid #4D4D4D;
+    border-right: 2rem solid transparent;
+}
+
+.content .activities .slider button.prev {
+    left: 1.25rem;
+    border-right: 2rem solid #4D4D4D;
+    border-left: 2rem solid transparent;
+}
+
+.content .contact {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    background: #F1F1F1;
+}
+
+.content .contact .text-bg {
+    position: absolute;
+    z-index: 0;
+    top: 60%;
+    left: -2.5%;
+    transform: translateY(-50%);
+    font-size: 25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5d5d5d;
+    opacity: 0.05;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.content .contact .email {
+    font-size: 5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #5d5d5d;
+}
+
+.content .contact .email a {
+    color: inherit;
+}
+
+.content .ornament-mail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content .ornament-mail img {
+    width: 36rem;
+    height: auto;
+}
+
+.content .ornament-squares-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(60%) scaleX(-1);
+    z-index: 0;
+}
+
+.content .ornament-squares-bottom img {
+    width: 40rem;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    background: #F8F8F8;
+}
+
+footer .ristek {
+    height: 3rem;
+    width: auto;
+    margin-right: 2rem;
+}
+
+footer .ristek img {
+    height: 100%;
+    width: auto;
+}
+
+footer .traveloka {
+    flex: 1;
+    height: 5rem;
+    text-align: right;
+}
+
+footer .traveloka img {
+    height: 100%;
+    width: auto;
+}
+
+footer .social {
+    height: 3rem;
+    width: auto;
+}
+
+footer .social a {
+    margin-left: 0.5rem;
+}
+
+footer .social a img {
+    height: 3rem;
+    width: 3rem;
+}
+
+@media screen and (min-width: 64em) and (min-width: 75em) {
+    .content .home-ristek-logo .container {
+        width: 20rem;
+        height: 20rem;
+        padding: 2.5rem 0 0 2.5rem;
+    }
+
+    .content .home-ristek-logo .diamond {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .content .home-ristek-logo img {
+        height: 8rem;
+    }
+
+    .content .home-ristek-logo .tagline h1 {
+        font-size: 1.5rem;
+    }
+
+    .content .ornament-squares-upper img {
+        width: 28rem;
+        height: auto;
+    }
+
+    .content .ornament-squares-middle img {
+        width: 28rem;
+        height: auto;
+    }
+
+    .content .lamp-upper img {
+        height: 12.5rem;
+        width: auto;
+    }
+
+    .content .paradox-upper img {
+        height: 17.5rem;
+        width: auto;
+    }
+
+    .content .ornament-cloth-upper img {
+        width: 35rem;
+        height: auto;
+    }
+
+    .content .ornament-cloth-lower img {
+        width: 45rem;
+        height: auto;
+    }
+
+    .content .mission .text-bg {
+        font-size: 17.5rem;
+    }
+
+    .content .mission .text {
+        max-width: 1000px;
+    }
+
+    .content .mission .text h1 {
+        font-size: 2rem;
+    }
+
+    .content .mission .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .content .ornament-notebook-middle {
+        top: 210%;
+        left: 10%;
+    }
+
+    .content .ornament-notebook-middle img {
+        width: 25rem;
+    }
+
+    .content .ornament-vr-middle {
+        top: 285%;
+    }
+
+    .content .ornament-vr-middle img {
+        width: 20rem;
+    }
+
+    .content .activities-text-bg {
+        font-size: 17.5rem;
+    }
+
+    .content .activities .text {
+        max-width: 1000px;
+    }
+
+    .content .activities .text h1 {
+        font-size: 2rem;
+    }
+
+    .content .activities .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .content .activities .slider-content.first h1,
+    .content .activities .slider-content.last h1,
+    .content .activities .slider-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content .activities .slider-content.first p,
+    .content .activities .slider-content.last p,
+    .content .activities .slider-content p {
+        font-size: 1rem;
+    }
+
+    .content .contact .text-bg {
+        font-size: 17.5rem;
+    }
+
+    .content .ornament-mail img {
+        width: 24rem;
+    }
+
+    .content .ornament-squares-bottom img {
+        width: 30rem;
+        height: auto;
+    }
+
+    footer {
+        padding: 2rem 3.5rem;
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 64em) {
+    .content .ornament-squares-upper img {
+        width: 25rem;
+    }
+
+    .content .ornament-squares-middle img {
+        width: 25rem;
+    }
+
+    .content .lamp-upper {
+        top: 80%;
+        left: 20%;
+    }
+
+    .content .lamp-upper img {
+        height: 10rem;
+    }
+
+    .content .paradox-upper {
+        top: 25%;
+        right: 10%;
+    }
+
+    .content .paradox-upper img {
+        height: 12.5rem;
+    }
+
+    .content .ornament-cloth-upper img {
+        width: 30rem;
+    }
+
+    .content .ornament-cloth-lower img {
+        width: 40rem;
+    }
+
+    .content .vision {
+        min-height: 70vh;
+        padding-top: 10vh;
+    }
+
+    .content .vision .background {
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .content .vision .text {
+        max-width: 40em;
+    }
+
+    .content .vision .text h2 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .content .vision .text h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    .content .mission .text-bg {
+        font-size: 12.5rem;
+    }
+
+    .content .mission .text {
+        max-width: 40em;
+    }
+
+    .content .mission .text h1 {
+        font-size: 2rem;
+    }
+
+    .content .mission .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .content .ornament-notebook-middle {
+        top: 185%;
+        left: 10%;
+    }
+
+    .content .ornament-vr-middle {
+        top: 250%;
+    }
+
+    .content .activities-text-bg {
+        top: 260vh;
+        font-size: 15rem;
+    }
+
+    .content .activities .text {
+        max-width: 40em;
+    }
+
+    .content .activities .text h1 {
+        font-size: 2rem;
+    }
+
+    .content .activities .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .content .activities .slider-content.first,
+    .content .activities .slider-content.last,
+    .content .activities .slider-content {
+        width: 50vw;
+    }
+
+    .content .activities .slider-content.first {
+        margin-left: -35vw;
+    }
+
+    .content .activities .slider-content.last {
+        margin-right: -35vw;
+    }
+
+    .content .activities .slider-content.first h1,
+    .content .activities .slider-content.last h1,
+    .content .activities .slider-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content .activities .slider-content.first p,
+    .content .activities .slider-content.last p,
+    .content .activities .slider-content p {
+        font-size: 1rem;
+    }
+
+    .content .contact .text-bg {
+        top: 50%;
+        font-size: 15rem;
+    }
+
+    .content .contact .email {
+        font-size: 3rem;
+    }
+
+    .content .ornament-mail img {
+        width: 32rem;
+    }
+
+    .content .ornament-squares-bottom img {
+        width: 30rem;
+        height: auto;
+    }
+
+    footer {
+        position: relative;
+        height: auto;
+        padding: 2rem 3.5rem;
+    }
+
+    footer .ristek {
+        height: auto;
+        width: auto;
+        margin-right: 2rem;
+    }
+
+    footer .ristek img {
+        height: 3rem;
+        width: auto;
+    }
+
+    footer .traveloka {
+        height: 5rem;
+    }
+
+    footer .traveloka img {
+        height: 100%;
+        width: auto;
+    }
+
+    footer .social {
+        margin-top: 0.5rem;
+        height: 2.5rem;
+        width: 100%;
+    }
+
+    footer .social a {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    footer .social a img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .logo {
+        position: fixed;
+        top: 2rem;
+        left: 2rem;
+        width: 2rem;
+        height: auto;
+        z-index: 1000;
+    }
+    
+    .content .home-ristek-logo .container {
+        width: 15rem;
+        height: 15rem;
+        padding: 1.75rem 0 0 1.75rem;
+    }
+
+    .content .home-ristek-logo .diamond {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .content .home-ristek-logo img {
+        height: 6rem;
+        left: 50%
+    }
+
+    .content .home-ristek-logo .tagline {
+        bottom: 0.5rem;
+    }
+
+    .content .home-ristek-logo .tagline h1 {
+        font-size: 1.25rem;
+    }
+    
+    .content .ornament-squares-upper img {
+        width: 15rem;
+    }
+
+    .content .ornament-squares-middle img {
+        width: 15rem;
+    }
+
+    .content .lamp-upper {
+        top: 80%;
+        left: 25%;
+    }
+
+    .content .lamp-upper img {
+        height: 6rem;
+    }
+    
+    .content .paradox-upper {
+        top: 25%;
+        right: 10%;
+    }
+
+    .content .paradox-upper img {
+        height: 8rem;
+    }
+
+    .content .vision {
+        min-height: 80vh;
+        padding: 20vh 0 40vh;
+    }
+
+    .content .vision .background {
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .content .vision .text {
+        max-width: 40em;
+        padding: 0 1rem;
+    }
+
+    .content .vision .text h1 {
+        font-size: 0.75rem;
+    }
+
+    .content .vision .text h2 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .content .vision .text h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0;
+    }
+
+    .content .mission {
+        padding: 0 0 30vh;
+    }
+
+    .content .mission .text-bg {
+        top: 6%;
+        font-size: 5rem;
+    }
+
+    .content .mission .text {
+        max-width: 40em;
+        padding: 0 1rem;
+    }
+
+    .content .mission .text h1 {
+        font-size: 2rem;
+    }
+
+    .content .mission .text h2 {
+        font-size: 1rem;
+    }
+
+    .content .ornament-notebook-middle {
+        top: 195%;
+        left: 15%;
+    }
+
+    .content .ornament-vr-middle {
+        top: 290%;
+        left: 15%;
+    }
+
+    .content .activities-text-bg {
+        top: 302vh;
+        font-size: 5rem;
+    }
+
+    .content .activities .text {
+        max-width: 40em;
+        padding: 0 1rem;
+    }
+
+    .content .activities .text h1 {
+        font-size: 2rem;
+    }
+
+    .content .activities .text h2 {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .content .activities .slider-content.first,
+    .content .activities .slider-content.last,
+    .content .activities .slider-content {
+        width: 75vw;
+    }
+
+    .content .activities .slider-content.first {
+        margin-left: -65vw;
+    }
+
+    .content .activities .slider-content.last {
+        margin-right: -65vw;
+    }
+
+    .content .activities .slider-content.first img,
+    .content .activities .slider-content.last img {
+        transform: scale(0.8);
+    }
+
+    .content .activities .slider-content.first h1,
+    .content .activities .slider-content.last h1,
+    .content .activities .slider-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content .activities .slider-content.first p,
+    .content .activities .slider-content.last p,
+    .content .activities .slider-content p {
+        font-size: 1rem;
+    }
+
+    .content .activities .slider button.next,
+    .content .activities .slider button.prev {
+        border-bottom: 1rem solid transparent;
+        border-top: 1rem solid transparent;
+    }
+
+    .content .activities .slider button.next {
+        right: 0;
+        border-left: 1rem solid #4D4D4D;
+        border-right: 1rem solid transparent;
+    }
+
+    .content .activities .slider button.prev {
+        left: 0;
+        border-right: 1rem solid #4D4D4D;
+        border-left: 1rem solid transparent;
+    }
+
+    .content .contact .text-bg {
+        top: 50%;
+        font-size: 5rem;
+    }
+
+    .content .contact .email {
+        font-size: 1.5rem;
+    }
+
+    .content .ornament-mail img {
+        width: 32rem;
+    }
+
+    .content .ornament-squares-bottom img {
+        width: 30rem;
+        height: auto;
+    }
+
+    footer {
+        position: relative;
+        height: auto;
+        padding: 2rem 3.5rem;
+    }
+
+    footer .ristek {
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    footer .ristek img {
+        height: auto;
+        width: 100%;
+    }
+
+    footer .traveloka {
+        flex: none;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    footer .traveloka img {
+        height: auto;
+        width: 100%;
+    }
+
+    footer .social {
+        margin-top: 1rem;
+        height: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .social a {
+        height: 2rem;
+        width: 2rem;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    footer .social a img {
+        height: 2rem;
+        width: 2rem;
+    }
 }

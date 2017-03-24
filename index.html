@@ -10,28 +10,28 @@
 		<link rel="stylesheet" href="assets/css/app.css" />
 	</head>
 	<body>
-		<nav>
-			<div class="logo">
-				<img src="assets/img/big-r.png" alt="logo" />
-			</div>
+		<div class="logo">
+			<a href="#home"><img src="assets/img/big-r.png" alt="logo" /></a>
+		</div>
+		<nav class="show-for-medium">
 			<div class="links">
-				<a>Home</a>
-				<a>About</a>
-				<a>Contact</a>
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
 				<a class="disabled">hall of fame</a>
 			</div>
 		</nav>
 		<div class="content">
-			<div class="ornament-cloth-upper">
+			<div class="ornament-cloth-upper show-for-medium">
 				<img src="assets/img/ornament-cloth.png" alt="ornament-cloth" />
 			</div>
 			<div class="ornament-squares-upper">
 				<img src="assets/img/ornament-squares.png" alt="ornament-squares" />
 			</div>
 			<div class="paradox-upper">
-				<img src="assets/img/paradox.png" alt="ornament-paradox" />
+				<img src="assets/img/ornament-paradox.png" alt="ornament-paradox" />
 			</div>
-			<div class="home-ristek-logo">
+			<div class="home-ristek-logo" id="home">
 				<div class="gradient-bg">
 					<img src="assets/img/shadow.png" alt="shadow" />
 				</div>
@@ -44,14 +44,82 @@
 				</div>
 			</div>
 			<div class="lamp-upper">
-				<img src="assets/img/lamp.png" alt="ornament-lamp" />
+				<img src="assets/img/ornament-lamp.png" alt="ornament-lamp" />
 			</div>
 			<div class="ornament-squares-middle">
 				<img src="assets/img/ornament-squares.png" alt="ornament-squares" />
 			</div>
-			<div class="ornament-cloth-lower">
+			<div class="ornament-cloth-lower show-for-medium">
 				<img src="assets/img/ornament-cloth.png" alt="ornament-cloth" />
 			</div>
+			<div class="vision" id="about">
+				<div class="text">
+					<img src="assets/img/ctit.png" alt="cultivating logo" />
+					<h1>/ CULTIVATING TALENTS IN TECHNOLOGY /</h1>
+					<h2>
+						Ristek Fasilkom UI is an independent organization operated by students
+						<br />
+						of Faculty of Computer Science Universitas Indonesia (Fasilkom UI) 
+					</h2>
+					<h3>which is aimed to facilitate student’s skills and interests in the field of science technology.</h3>
+				</div>
+				<img class="background" src="assets/img/vision-bg.png" alt="ristek" />
+			</div>
+			<div class="ornament-notebook-middle">
+				<img src="assets/img/ornament-notebook.png" alt="ornament-notebook" />
+			</div>
+			<div class="mission">
+				<div class="text">
+					<h1>/ MISSION /</h1>
+					<h2>
+						Ristek Fasilkom UI <strong>facilitates student's skills and interests</strong> by creating eight different Special
+						Interest Group where they can join and learn. We build a <strong>collaborative environment between members,
+						alumnus, elements, and society.</strong> All Ristek Fasilkom UI's activities are organized to <strong>improve knowledge
+						technology.</strong> Here, we also build a <strong>product development culture</strong> by providing qualified and structured
+						training in purpose to create skillful members.
+					</h2>
+				</div>
+				<div class="background"></div>
+				<h1 class="text-bg">MISSION</h1>
+			</div>
+			<div class="ornament-vr-middle">
+				<img src="assets/img/ornament-vr.png" alt="ornament-vr" />
+			</div>
+			<div id="activities">
+			</div>
+			<h1 class="activities-text-bg">ACTIVITIES</h1>
+			<div class="contact" id="contact">
+				<div class="ornament-mail">
+					<img src="assets/img/ornament-mail.png" alt="ornament-mail" />
+				</div>
+				<h1 class="text-bg">CONTACT</h1>
+				<h1 class="email"><a href="mailto:hello@ristek.cs.ui.ac.id">hello@ristek.cs.ui.ac.id</a></h1>
+				<div class="ornament-squares-bottom">
+					<img src="assets/img/ornament-squares.png" alt="ornament-squares" />
+				</div>
+			</div>
 		</div>
+		<footer>
+			<div class="ristek">
+				<img src="assets/img/footer_ristek.png" alt="ristek" />
+				<div class="social hide-for-large">
+					<a href="http://facebook.com/ristekcsui"><img src="assets/img/icon_fb.png" alt="ristek" /></a>
+					<a href="http://twitter.com/ristekcsui"><img src="assets/img/icon_twitter.png" alt="ristek" /></a>
+					<a href="http://line.me/ti/p/~@RYE2953F"><img src="assets/img/icon_line.png" alt="ristek" /></a>
+				</div>
+			</div>
+			<div class="social show-for-large">
+				<a href="http://facebook.com/ristekcsui"><img src="assets/img/icon_fb.png" alt="ristek" /></a>
+				<a href="http://twitter.com/ristekcsui"><img src="assets/img/icon_twitter.png" alt="ristek" /></a>
+				<a href="http://line.me/ti/p/~@RYE2953F"><img src="assets/img/icon_line.png" alt="ristek" /></a>
+			</div>
+			<div class="traveloka">
+				<img src="assets/img/footer_traveloka.png" alt="traveloka" />
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<script type="text/babel" src="assets/js/app.js"></script>
 	</body>
 </html>

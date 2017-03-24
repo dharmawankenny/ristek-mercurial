@@ -225,6 +225,7 @@ nav .links a:nth-last-of-type() {
 .content .ornament-squares-middle {
     position: absolute;
     top: 100%;
+    left: 0;
     transform: translateY(-50%);
     z-index: 1;
 }
@@ -407,7 +408,7 @@ nav .links a:nth-last-of-type() {
 
 .content .ornament-notebook-middle {
     position: absolute;
-    top: 212.5%;
+    top: 212.5vh;
     left: 12.5%;
     transform: translateY(-50%);
     z-index: 1;
@@ -420,7 +421,7 @@ nav .links a:nth-last-of-type() {
 
 .content .ornament-vr-middle {
     position: absolute;
-    top: 282.5%;
+    top: 282.5vh;
     right: 2.5%;
     transform: translateY(-50%);
     z-index: 1;
@@ -767,7 +768,7 @@ footer .social a img {
     }
 
     .content .ornament-notebook-middle {
-        top: 210%;
+        top: 210vh;
         left: 10%;
     }
 
@@ -776,7 +777,7 @@ footer .social a img {
     }
 
     .content .ornament-vr-middle {
-        top: 285%;
+        top: 285vh;
     }
 
     .content .ornament-vr-middle img {
@@ -906,12 +907,12 @@ footer .social a img {
     }
 
     .content .ornament-notebook-middle {
-        top: 185%;
+        top: 185vh;
         left: 10%;
     }
 
     .content .ornament-vr-middle {
-        top: 250%;
+        top: 250vh;
     }
 
     .content .activities-text-bg {
@@ -1133,12 +1134,12 @@ footer .social a img {
     }
 
     .content .ornament-notebook-middle {
-        top: 195%;
+        top: 195vh;
         left: 15%;
     }
 
     .content .ornament-vr-middle {
-        top: 290%;
+        top: 290vh;
         left: 15%;
     }
 

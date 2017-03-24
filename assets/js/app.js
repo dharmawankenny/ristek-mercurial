@@ -5,32 +5,32 @@ class Activities extends React.Component {
         this.state = {
             content: [
                 {
-                    img: '/assets/img/alumni_gath.png',
+                    img: 'assets/img/alumni_gath.png',
                     title: 'Alumni Gathering',
                     text: 'Activity held to connect former and current Ristek’s members to build positive relationship among them.',
                 },
                 {
-                    img: '/assets/img/internal_class.png',
+                    img: 'assets/img/internal_class.png',
                     title: 'Internal Class',
                     text: 'A weekly activity tends to improve Ristek\'s members\' skill and understanding of technology based on their interest group.',
                 },
                 {
-                    img: '/assets/img/open_class.png',
+                    img: 'assets/img/open_class.png',
                     title: 'Open Class',
                     text: 'Open Class is our way to facilitate Fasilkom UI students - especially freshmen - that are interested to learn deeper from Ristek’s SIGs',
                 },
                 {
-                    img: '/assets/img/pekan_ristek.png',
+                    img: 'assets/img/pekan_ristek.png',
                     title: 'Pekan Ristek',
                     text: 'An annual event conducted over a week long in order to increase IT awareness. Composed of competitions, showcase, seminar, and many more.',
                 },
                 {
-                    img: '/assets/img/rsync.png',
+                    img: 'assets/img/rsync.png',
                     title: 'RSync',
                     text: 'Internal activities for Ristek’s members to build collaboration and good teamwork with fellow members.',
                 },
                 {
-                    img: '/assets/img/tech_talk.png',
+                    img: 'assets/img/tech_talk.png',
                     title: 'Tech Talk',
                     text: 'A regular activity which is held by Ristek in collaboration with partner to educate people about the newest trends in technology.',
                 },

@@ -614,10 +614,12 @@ nav .links a:nth-last-of-type() {
 }
 
 .content .contact .email {
+    position: relative;
     font-size: 5rem;
     font-weight: 700;
     text-decoration: underline;
     color: #5d5d5d;
+    z-index: 400;
 }
 
 .content .contact .email a {
@@ -628,7 +630,7 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 .content .ornament-mail img {

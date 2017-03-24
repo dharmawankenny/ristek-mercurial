@@ -91,11 +91,6 @@ class Activities extends React.Component {
             currentLast = currentLast - this.state.content.length;
         }
 
-        console.log(currentFirst);
-        console.log(currentSecond);
-        console.log(currentFourth);
-        console.log(currentLast);
-
         return (
 			<div className="activities">
                 <div className="text">

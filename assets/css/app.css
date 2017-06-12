@@ -38,21 +38,373 @@
     font-weight: bold;
     font-style: normal;
 }
-  
+
+@-webkit-keyframes fadeInLogoRistek {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLogoRistek {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInLampUpper {
+    from {
+        transform: translate(-50%, -50%) scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLampUpper {
+    from {
+        transform: translate(-50%, -50%) scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInParadoxUpper {
+    from {
+        transform: translate(-50%, -50%) scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInParadoxUpper {
+    from {
+        transform: translateY(-50%) scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes zoomInOrnamentSquaresUpper {
+    from {
+        transform: translateY(-50%) scaleX(-1.1) scaleY(1.1);
+    }
+
+    to {
+        transform: translateY(-50%) scaleX(-1) scaleY(1);
+    }
+}
+
+@keyframes zoomInOrnamentSquaresUpper {
+    from {
+        transform: translateY(-50%) scaleX(-1.1) scaleY(1.1);
+    }
+
+    to {
+        transform: translateY(-50%) scaleX(-1) scaleY(1);
+    }
+}
+
+@-webkit-keyframes zoomInOrnamentSquaresMiddle {
+    from {
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    to {
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+@keyframes zoomInOrnamentSquaresMiddle {
+    from {
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    to {
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+@-webkit-keyframes zoomInOrnamentClothUpper {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomInOrnamentClothUpper {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes zoomInOrnamentClothLower {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomInOrnamentClothLower {
+    from {
+        transform: translateY(-75%) scale(-1.1, -1.1);
+    }
+
+    to {
+        transform: translateY(-75%) scale(-1, -1);
+    }
+}
+
+@-webkit-keyframes fadeInVisionText {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInVisionText {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInVisionTextScaleIn {
+    from {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInVisionTextScaleIn {
+    from {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInOrnamentNotebookAndVRMiddle {
+    from {
+        transform: translateY(-50%) scale(0.75);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOrnamentNotebookAndVRMiddle {
+    from {
+        transform: translateY(-50%) scale(0.75);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideLeftTextBG {
+    from {
+        transform: translate(-100%, -50%);
+    }
+
+    to {
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes slideLeftTextBG {
+    from {
+        transform: translate(-100%, -50%);
+    }
+
+    to {
+        transform: translate(0, -50%);
+    }
+}
+
+@-webkit-keyframes slideRightTextBGNoY {
+    from {
+        transform: translate(-100%, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slideRightTextBGNoY {
+    from {
+        transform: translate(-100%, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes rotateTriangleBG {
+    from {
+        border-left: 100vw solid #ECECEC;
+        border-right: 100vw solid transparent;
+        border-bottom: 100vh solid #ECECEC;
+        border-top: 100vh solid transparent;
+        transform: rotate(-45deg);
+    }
+
+    to {
+        border-left: 50vw solid #F1F1F1;
+        border-right: 50vw solid transparent;
+        border-bottom: 50vh solid #F1F1F1;
+        border-top: 50vh solid transparent;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotateTriangleBG {
+    from {
+        border-left: 100vw solid #ECECEC;
+        border-right: 100vw solid transparent;
+        border-bottom: 100vh solid #ECECEC;
+        border-top: 100vh solid transparent;
+        transform: rotate(-45deg);
+    }
+
+    to {
+        border-left: 50vw solid #F1F1F1;
+        border-right: 50vw solid transparent;
+        border-bottom: 50vh solid #F1F1F1;
+        border-top: 50vh solid transparent;
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes loaderAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loaderAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    65% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes loaderFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes loaderFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 ::selection {
-  color: #FFFFFF;
-  background: #25AECD;
+    color: #FFFFFF;
+    background: #25AECD;
 }
 
 ::-moz-selection {
-  color: #FFFFFF;
-  background: #25AECD;
+    color: #FFFFFF;
+    background: #25AECD;
 }
 
 body {
     background: #ECECEC;
     font-family: 'Proxima Nova';
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: visible;
 }
@@ -63,6 +415,84 @@ button:focus {
 
 img {
     pointer-events: none;
+}
+
+#loading {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background: #F4F4F4;
+}
+
+#loading.halfDone {
+    opacity: 1;
+    animation: loaderFadeOut 1s ease-out normal forwards;
+}
+
+#loading.done {
+    display: none;
+}
+
+#loading .gif {
+    width: 7.5rem;
+    height: auto;
+    display: block;
+    margin-top: 5rem;
+    transform: translateY(0);
+    animation: loaderAnimation 4.5s linear normal infinite;
+}
+
+#loading h1,
+#loading h2 {
+    display: block;
+    color: #25AECD;
+    line-height: 1;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+#loading h1 {
+    font-size: 3rem;
+    margin: 5rem 0 0.25rem;
+}
+
+#loading h2 {
+    font-size: 1rem;
+}
+
+#loading h3 {
+    margin: 3rem 0 -3rem;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+}
+
+#loading .traveloka {
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+#webctn {
+    display: none;
+}
+
+#webctn.loaded {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .logo {
@@ -131,7 +561,7 @@ nav .links a:nth-last-of-type() {
 .content {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: visible;
 }
@@ -144,19 +574,21 @@ nav .links a:nth-last-of-type() {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    transform: scale(0.85);
+    opacity: 0;
+}
+
+.content .home-ristek-logo.animated {
+    animation: fadeInLogoRistek 1s ease-in-out 0.25s normal forwards;
 }
 
 .content .home-ristek-logo .gradient-bg {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 0.375rem);
     left: 50%;
-    width: 75%;
-    transform: translate(-50%, -50%);
-}
-
-.content .home-ristek-logo .gradient-bg img {
-    width: 100%;
-    height: auto;
+    width: 65rem;
+    transform: translate(-50%, -100%);
 }
 
 .content .home-ristek-logo .container {
@@ -171,12 +603,12 @@ nav .links a:nth-last-of-type() {
     height: 17.65rem;
     transform: rotate(45deg);
     background: #FFFFFF;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.75);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.75);
-    box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(100,100,100,0.25);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(100,100,100,0.25);
+    box-shadow: 0px 0px 10px 0px rgba(100,100,100,0.25);
 }
 
-.content .home-ristek-logo img {
+.content .home-ristek-logo .home-logo {
     position: absolute;
     top: calc(50% - 0.5rem);
     left: calc(50% - 0.5rem);
@@ -213,8 +645,12 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateY(-50%) scaleX(-1);
+    transform: translateY(-50%) scaleX(-1.1) scaleY(1.1);
     z-index: -1;
+}
+
+.content .ornament-squares-upper.animated {
+    animation: zoomInOrnamentSquaresUpper 1s ease-in-out normal forwards;
 }
 
 .content .ornament-squares-upper img {
@@ -226,8 +662,12 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 100%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(1.1);
     z-index: 1;
+}
+
+.content .ornament-squares-middle.animated {
+    animation: zoomInOrnamentSquaresMiddle 1s ease-in-out normal forwards;
 }
 
 .content .ornament-squares-middle img {
@@ -239,12 +679,17 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 60%;
     left: 15%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0;
     z-index: -1;
 }
 
+.content .lamp-upper.animated {
+    animation: fadeInLampUpper 1s ease-in-out 0.25s normal forwards;
+}
+
 .content .lamp-upper img {
-    height: 17.5rem;
+    height: 22.5rem;
     width: auto;
 }
 
@@ -252,8 +697,13 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 40%;
     right: 7.5%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(0.85);
+    opacity: 0;
     z-index: -1;
+}
+
+.content .paradox-upper.animated {
+    animation: fadeInParadoxUpper 1s ease-in-out 0.25s normal forwards;
 }
 
 .content .paradox-upper img {
@@ -266,6 +716,11 @@ nav .links a:nth-last-of-type() {
     top: 0;
     left: 0;
     z-index: -1;
+    transform: scale(1);
+}
+
+.content .ornament-cloth-upper.animated {
+    animation: zoomInOrnamentClothUpper 1s ease-in-out normal forwards;
 }
 
 .content .ornament-cloth-upper img {
@@ -279,6 +734,10 @@ nav .links a:nth-last-of-type() {
     right: 0;
     transform: translateY(-75%) scale(-1, -1);
     z-index: 1;
+}
+
+.content .ornament-cloth-lower.animated {
+    animation: zoomInOrnamentClothLower 1s ease-in-out normal forwards;
 }
 
 .content .ornament-cloth-lower img {
@@ -312,6 +771,12 @@ nav .links a:nth-last-of-type() {
 
 .content .vision .text {
     text-align: center;
+    transform: scale(0.85);
+    opacity: 0;
+}
+
+.content .vision .text.animated {
+    animation: fadeInVisionText 1s ease-in-out normal forwards;
 }
 
 .content .vision .text img {
@@ -363,10 +828,15 @@ nav .links a:nth-last-of-type() {
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 50vw solid #F1F1F1;
-    border-right: 50vw solid transparent;
-    border-bottom: 50vh solid #F1F1F1;
-    border-top: 50vh solid transparent;
+    border-left: 100vw solid #ECECEC;
+    border-right: 100vw solid transparent;
+    border-bottom: 100vh solid #ECECEC;
+    border-top: 100vh solid transparent;
+    transform: rotate(-45deg);
+}
+
+.content .mission .background.animated {
+    animation: rotateTriangleBG 1s ease-in-out normal forwards;
 }
 
 .content .mission .text-bg {
@@ -374,7 +844,7 @@ nav .links a:nth-last-of-type() {
     z-index: -1;
     top: 42.5%;
     left: -2.5%;
-    transform: translateY(-50%);
+    transform: translate(-100%, -50%);
     font-size: 25rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -382,8 +852,18 @@ nav .links a:nth-last-of-type() {
     opacity: 0.05;
 }
 
+.content .mission .text-bg.animated {
+    animation: slideLeftTextBG 1s ease-in-out 1s normal forwards;
+}
+
 .content .mission .text {
     max-width: 1200px;
+    transform: scale(0.85);
+    opacity: 0;
+}
+
+.content .mission .text.animated {
+    animation: fadeInVisionTextScaleIn 1s ease-in-out 1s normal forwards;
 }
 
 .content .mission .text h1 {
@@ -410,8 +890,13 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 212.5vh;
     left: 12.5%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(0.75);
+    opacity: 0;
     z-index: 1;
+}
+
+.content .ornament-notebook-middle.animated {
+    animation: fadeInOrnamentNotebookAndVRMiddle 1s ease-in-out 0.5s normal forwards;
 }
 
 .content .ornament-notebook-middle img {
@@ -423,8 +908,13 @@ nav .links a:nth-last-of-type() {
     position: absolute;
     top: 282.5vh;
     right: 2.5%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(0.75);
+    opacity: 0;
     z-index: 1;
+}
+
+.content .ornament-vr-middle.animated {
+    animation: fadeInOrnamentNotebookAndVRMiddle 1s ease-in-out 0.5s normal forwards;
 }
 
 .content .ornament-vr-middle img {
@@ -442,7 +932,7 @@ nav .links a:nth-last-of-type() {
     justify-content: center;
     overflow: hidden visible;
     background: #F1F1F1;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 .content .activities-text-bg {
@@ -451,7 +941,7 @@ nav .links a:nth-last-of-type() {
     top: 280vh;
     left: -2.5%;
     right: 0;
-    width: 100%;
+    width: 102.5%;
     overflow: hidden;
     font-size: 25rem;
     font-weight: 700;
@@ -464,12 +954,23 @@ nav .links a:nth-last-of-type() {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    transform: translate(-100%, 0);
+}
+
+.content .activities-text-bg.animated {
+    animation: slideRightTextBGNoY 1s ease-in-out normal forwards;
 }
 
 .content .activities .text {
     text-align: center;
     max-width: 1200px;
     margin-top: -2.5vh;
+    transform: scale(0.85);
+    opacity: 0;
+}
+
+.content .activities .text.animated {
+    animation: fadeInVisionText 1s ease-in-out 0.5s normal forwards;
 }
 
 .content .activities .text h1 {
@@ -493,6 +994,12 @@ nav .links a:nth-last-of-type() {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.content .activities .slider.animated {
+    animation: fadeInVisionTextScaleIn 1s ease-in-out normal forwards;
 }
 
 .content .activities .slider-content.first,
@@ -600,7 +1107,7 @@ nav .links a:nth-last-of-type() {
     z-index: 0;
     top: 60%;
     left: -2.5%;
-    transform: translateY(-50%);
+    transform: translate(-100%, -50%);
     font-size: 25rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -612,6 +1119,11 @@ nav .links a:nth-last-of-type() {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    opacity: 0.05;
+}
+
+.content .contact .text-bg.animated {
+    animation: slideLeftTextBG 1s ease-in-out normal forwards;
 }
 
 .content .contact .email {
@@ -621,6 +1133,12 @@ nav .links a:nth-last-of-type() {
     text-decoration: underline;
     color: #5d5d5d;
     z-index: 400;
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.content .contact .email.animated {
+    animation: fadeInVisionTextScaleIn 1s ease-in-out normal forwards;
 }
 
 .content .contact .email a {
@@ -629,13 +1147,14 @@ nav .links a:nth-last-of-type() {
 
 .content .ornament-mail {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 0;
 }
 
 .content .ornament-mail img {
-    width: 36rem;
+    width: 30rem;
     height: auto;
 }
 
@@ -701,7 +1220,33 @@ footer .social a img {
     width: 3rem;
 }
 
-@media screen and (min-width: 64em) and (min-width: 75em) {
+@media screen and (min-width: 64em) and (max-width: 90em) {
+    #loading .gif {
+        width: 5rem;
+        margin-top: 3.5rem;
+    }
+
+    #loading h1 {
+        font-size: 2.5rem;
+        margin: 3.5rem 0 0.25rem;
+    }
+
+    #loading h2 {
+        font-size: 0.85rem;
+    }
+
+    #loading h3 {
+        margin: 3rem 0 -2.5rem;
+    }
+
+    #loading .traveloka {
+        width: 17.5rem;
+    }
+
+    .content .home-ristek-logo .gradient-bg {
+        width: 55rem;
+    }
+
     .content .home-ristek-logo .container {
         width: 20rem;
         height: 20rem;
@@ -713,7 +1258,7 @@ footer .social a img {
         height: 14rem;
     }
 
-    .content .home-ristek-logo img {
+    .content .home-ristek-logo .home-logo {
         height: 8rem;
     }
 
@@ -732,7 +1277,7 @@ footer .social a img {
     }
 
     .content .lamp-upper img {
-        height: 12.5rem;
+        height: 17.5rem;
         width: auto;
     }
 
@@ -831,6 +1376,28 @@ footer .social a img {
 }
 
 @media screen and (min-width: 40em) and (max-width: 64em) {
+    #loading .gif {
+        width: 5rem;
+        margin-top: 3.5rem;
+    }
+
+    #loading h1 {
+        font-size: 2.5rem;
+        margin: 3.5rem 0 0.25rem;
+    }
+
+    #loading h2 {
+        font-size: 0.85rem;
+    }
+
+    #loading h3 {
+        margin: 3rem 0 -2.5rem;
+    }
+
+    #loading .traveloka {
+        width: 17.5rem;
+    }
+
     .content .ornament-squares-upper img {
         width: 25rem;
     }
@@ -845,7 +1412,7 @@ footer .social a img {
     }
 
     .content .lamp-upper img {
-        height: 10rem;
+        height: 12.5rem;
     }
 
     .content .paradox-upper {
@@ -1022,6 +1589,29 @@ footer .social a img {
 }
 
 @media screen and (max-width: 40em) {
+    #loading .gif {
+        width: 5rem;
+        margin-top: 7.5rem;
+    }
+
+    #loading h1 {
+        font-size: 2.5rem;
+        margin: 3.5rem 0 0.25rem;
+    }
+
+    #loading h2 {
+        font-size: 0.85rem;
+    }
+
+    #loading h3 {
+        margin: 3rem 0 -2rem;
+        font-size: 0.5rem;
+    }
+
+    #loading .traveloka {
+        width: 15rem;
+    }
+
     .logo {
         position: fixed;
         top: 2rem;
@@ -1030,7 +1620,12 @@ footer .social a img {
         height: auto;
         z-index: 1000;
     }
-    
+
+    .content .home-ristek-logo .gradient-bg {
+        top: 50%;
+        width: 100%;
+    }
+
     .content .home-ristek-logo .container {
         width: 15rem;
         height: 15rem;
@@ -1042,7 +1637,7 @@ footer .social a img {
         height: 11rem;
     }
 
-    .content .home-ristek-logo img {
+    .content .home-ristek-logo .home-logo {
         height: 6rem;
         left: 50%
     }
@@ -1054,7 +1649,7 @@ footer .social a img {
     .content .home-ristek-logo .tagline h1 {
         font-size: 1.25rem;
     }
-    
+
     .content .ornament-squares-upper img {
         width: 15rem;
     }
@@ -1063,15 +1658,23 @@ footer .social a img {
         width: 15rem;
     }
 
+    .content .ornament-cloth-upper img {
+        display: none;
+    }
+
+    .content .ornament-cloth-lower img {
+        display: none;
+    }
+
     .content .lamp-upper {
         top: 80%;
         left: 25%;
     }
 
     .content .lamp-upper img {
-        height: 6rem;
+        height: 8rem;
     }
-    
+
     .content .paradox-upper {
         top: 25%;
         right: 10%;

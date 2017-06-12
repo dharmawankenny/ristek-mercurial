@@ -71,7 +71,7 @@ class Activities extends React.Component {
     render() {
         let currentFirst = this.state.current - 2;
         let currentSecond = this.state.current - 1;
-        
+
         if (currentFirst < 0) {
             currentFirst = (this.state.content.length) + currentFirst;
         }
@@ -93,7 +93,7 @@ class Activities extends React.Component {
 
         return (
 			<div className="activities">
-                <div className="text">
+                <div className="text" id="activities-text">
                     <h1>/ ACTIVITIES /</h1>
                     <h2>
                         Ristek Fasilkom UI held several activities to improve its
@@ -101,7 +101,7 @@ class Activities extends React.Component {
                         member's skill and understanding of technology
                     </h2>
                 </div>
-                <div className="slider">
+                <div className="slider" id="activities-slider">
                     <button className="prev" onClick={this.prev}></button>
                     <button className="next" onClick={this.next}></button>
                     <div className="slider-content first show-for-large">
